@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1819a2">
+  <link rel="stylesheet" href="style.css">
+  <title>My Personal Website</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="H1">Welcome!</h1>
+      <div class="subheader">
+        <p>This is my personal website! <br> Another project I made to <span class="highlight">improve</span> my skills in web development.
+        </p>
+      </div>
+      <input type="text" id="username" placeholder="Type your name...">
+      <div class="bttn">
+        <button onclick="goToNextPage()">
+          Learn More About Me!
+        </button>
+      </div>
+  </div>
+  
+<script>
+  function goToNextPage() {
+    const input = document.getElementById("username").value.trim();
+
+    if (!input) {
+      window.location.href = "about.html?name=User";
+      return;
+    }
+
+    const cleaned = input.replace(/\s+/g, '').toLowerCase();
+
+    if (cleaned === "matrix") {
+      window.location.href = "lol.html";
+    } else if (cleaned === "whatif") {
+      window.location.href = "whatif.html";
+    } else {
+      window.location.href = `about.html?name=${encodeURIComponent(input)}`;
+    }
+  }
+</script>
+</body>
+</html>

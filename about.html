@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#1819a2">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">  
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">  
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">  
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style2.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>About Me</title>
+</head>
+<body>
+  <header class="header">
+  <div>
+    <button class="title" onclick="
+    location.href='index.html'">
+      GΞO
+    </button>
+  </div>
+    <ul class="nav">
+      <li>|</li>
+      <li><a href="#about">About</a></li>
+      <li>|</li>
+      <li><a href="#skills">Skills</a></li>
+      <li>|</li>
+      <li><a href="#more">More</a>
+      </li>
+      <li>|</li>
+      <li><a href="#contacts">Contacts</a></li>
+      <li>|</li>
+      </ul>
+   </header>
+
+<hr style="margin-top: 165px;">
+
+  <section id="intro">
+    <div class="container">
+      <div class="card" data-aos="fade-up">
+        <p id="typewriter">
+          <span id="text"></span>
+          <span class="cursor">|</span>
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <div class="backToTop">
+    <button onclick="location.href='#intro'">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+  </div>
+  
+  <hr data-aos="fade-right" style="margin-bottom: 150px;">
+  
+  <section id="about" data-aos="fade-up">
+    <div class="about">
+      <div class="about_img">
+        <h1 data-aos="fade-up">Who Am I?</h1>
+      <p data-aos="fade-up-right">
+        I'm Geohan, a tech enthusiast and an aspiring developer from the Philippines who finds comfort in solitude, code, and creating things that speak without words.
+      </p>
+      
+      <p data-aos="fade-up-right">
+        I was born in the province of Guimaras and have been visually impaired ever since, but that hasn't stopped me from learning, exploring, or doing what I'm passionate about.
+      </p>
+      
+      <p data-aos="fade-up-right">
+        This site is my digital corner, built from ideas, late-night thoughts, and a quiet passion for learning and growth.
+      </p>
+      </div>
+    </div>
+  </section>
+  
+  <hr data-aos="fade-right">
+  
+  <section id="skills" data-aos="fade-up">
+    <div class="skills">
+      <h1 data-aos="fade-up">Skills</h1> 
+    </div>
+      <p data-aos="fade-up-right">
+        So far I only know how to code in frontend languages in web development, which are:
+      </p>
+      <dl>
+        <dt class="HTML" data-aos="fade-up-right">
+          • HTML
+        </dt>
+        <dd data-aos="fade-up-right">-Im most confident with HTML because this is where I started and is very easy to learn.
+        </dd>
+        <dt class="CSS" data-aos="fade-up-right">
+          • CSS
+        </dt>
+        <dd data-aos="fade-up-right">
+          -CSS is also pretty straight forward but can be a headache sometimes.
+        </dd>
+        <dt class="JavaScript" data-aos="fade-up-right">
+          • JavaScript
+        </dt>
+        <dd data-aos="fade-up-right">
+          -I'm still new to this language and I'm actively learning it so my skills aren't that good yet.
+        </dd>
+      </dl>
+      <div class="chartbg" data-aos="fade-up">
+        <div class="chart-container" style="max-width: 600px; margin: 40px auto;" data-aos="fade-up">
+        <canvas id="skillsBarChart">
+        </canvas>
+        </div>
+      </div>
+      
+<div class="skills-grid" data-aos="fade-up">
+   <div class="skill-card" data-aos="fade-up">
+     <div class="imgBg">
+       <img src="html.png" class="skill-img">
+     </div>
+      <div class="skill-label">
+        <a href="https://en.m.wikipedia.org/wiki/HTML" target="_blank">
+          HTML
+          </a>
+      </div>
+  </div>
+
+  <div class="skill-card" data-aos="fade-up">
+    <div class="imgBg">
+      <img src="css.png" class="skill-img">
+    </div>
+      <div class="skill-label">
+        <a href="https://en.m.wikipedia.org/wiki/CSS" target="_blank">
+          CSS
+        </a>
+      </div>
+  </div>
+
+  <div class="skill-card" data-aos="fade-up">
+    <div class="imgBg">
+      <img src="js.png" class="skill-img">
+    </div>
+      <div class="skill-label">
+        <a href="https://en.m.wikipedia.org/wiki/JavaScript" target="_blank">
+          JavaScript
+        </a>
+      </div>
+  </div>
+</div>
+  </section>
+  
+  <hr data-aos="fade-right">
+  
+<section id="more" data-aos="fade-up">
+<div class="more_img">
+  <h1 data-aos="fade-up">More About Me</h1>
+<div class="p-container">
+  <h3 data-aos="fade-up-right">🌱 My Purpose</h3>
+  <p data-aos="fade-up-right">
+    My main purpose is to keep growing, stay true to myself, and expand my knowledge about tech while making things that mean something to me.
+  </p>
+
+  <h3 data-aos="fade-up-right">🎯 My Goals</h3>
+  <p data-aos="fade-up-right">
+    I aim to be a successful programmer or developer, whether in game development, software engineering, or something I haven't yet discovered.
+  </p>
+
+  <h3 data-aos="fade-up-right">🧭 Where I Am Now</h3>
+  <p data-aos="fade-up-right">
+    My path isn’t fully clear yet because I’m still exploring the field of tech, but I’m fueled by my deep curiosity and passion for technology.
+  </p>
+
+  <h3 data-aos="fade-up-right">🚀 Self-Improvement</h3>
+  <p data-aos="fade-up-right">
+    I’m also working on becoming the best version of myself, not to outshine anyone, but to grow in my own way.
+  </p>
+
+  <h3 data-aos="fade-up-right">🛤 The Journey</h3>
+  <p data-aos="fade-up-right">
+    My journey isn’t always steady. Some days I make progress, other days I don't, but I believe it’s all part of the process. For me, it’s not about being perfect. It’s about staying consistent, staying curious, and having the willingness to keep going.
+  </p>
+
+</div>
+   </div>
+   
+  <div class="box">
+    <button popovertarget="interests">Interests</button>
+    <div id="interests" popover>
+      <strong><h2>My Interests</h2></strong>
+      <dl>
+        <dt>🌐Technology:</dt>
+        <dd>I'm fascinated by AI, robotics, programming, and emerging tech. I enjoy exploring how things work behind the scenes and how they shape our future.</dd>
+      
+        <dt>🎮Video Games:</dt>
+        <dd>I'm mainly into FPS games. I also like games that test your creativity.</dd>
+      
+        <dt>⛑️War History:</dt>
+        <dd>I dive into historical global conflicts like WWI, WWII, the Cold War, and more. It’s not just about battles, it's the stories, strategies, and the impact that interests me.</dd>
+      
+        <dt>🔫Firearms:</dt>
+        <dd>The mechanics, engineering, and designs of firearms are just fascinating. I admire the complexity behind how they function and evolve over time.</dd>
+      </dl>
+      <button popovertarget="interests">Close</button>
+    </div>
+    
+<button popovertarget="motive">My Motive</button>
+<div id="motive" popover>
+  <strong><h2>Why I Chose This Path</h2></strong>
+      <p>
+        I didn’t pick this direction just for fun, I chose it because I <em>genuinely love it.</em> I enjoy learning how things work, building things from scratch, and constantly improving.
+      </p>
+      <p>
+        But it’s more than just passion. I want to be <em>successful</em> so I can one day help get my family out of this tough situation. I’ve seen the struggles, and I want to be the reason we rise above it.
+      </p>
+      <p>
+        I don’t want to just survive, I want to <em>thrive</em>, to learn everything I can, and use what I love to build a better future for all of us. One day, I’ll repay my parents for everything they’ve done.
+      </p>
+      <p>
+        That’s what drives me.
+      </p>
+    <button popovertarget="motive">Close</button>
+</div>
+    
+    <button popovertarget="facts">Facts</button>
+    <div id="facts" popover>
+      <strong><h2>More Than What You See</h2></strong>
+      <ol>
+        <li>My right eye has worse vision than my left.</li>
+        <li>I once sliced my chin as a kid running up the stairs with a cup of water.</li>
+        <li>I’m not very social, but if we vibe, I’ll stay loyal <em>for life</em>.</li>
+        <li>I don’t like flexing, not because I haven’t achieved anything, but because I don’t need to.</li>
+        <li>I express myself best by doing and making.</li>
+        <li>I might not always say or show it but I <em>deeply</em> care for the people I trust.</li>
+        <li>I grew up watching <em>a lot</em> of English media, that's why I find it easier to understand English than Filipino.</li>
+      </ol>
+      <button popovertarget="facts">Close</button>
+    </div>
+    
+    <button popovertarget="change">Change</button>
+
+<div id="change" popover>
+  <strong><h2>Where It All Began</h2></strong>
+  <p>
+    I wasn’t always the person I am today. I used to be more immature, unaware of the weight of my actions and how they affected others.
+  </p>
+  <p>
+    But someone came into my life and helped me realize the things I couldn’t see on my own. Just knowing them made me look at myself in ways I never had before. <em>They didn’t just leave memories... they left meaning.</em>
+  </p>
+  <p>
+    They helped me grow up, not by force, but just by being who they were.
+  </p>
+  <p>
+    I carry that change with me every day. And even though they’re no longer here in the same way, their impact will never fade. They’ll always have a place in my heart.
+  </p>
+  <button popovertarget="change">Close</button>
+</div>
+</div>
+</section>
+
+  <hr data-aos="fade-right">
+  
+  <section id="projects" data-aos="fade-up">
+    <div class="projects-cont">
+      <h1 data-aos="fade-up">Projects</h1>
+  <div class="project-grid">
+    <article class="project-card" data-aos="fade-right">
+      <h3>My First Project</h3>
+      <p>A simple personal webpage made using only HTML and CSS.</p>
+      <a href="https://matt299ak.github.io/aboutMe" target="_blank">View</a>
+    </article>
+    <article class="project-card" data-aos="fade-right">
+      <h4>More projects coming soon...:></h4>
+    </article>
+  </div>
+    </div>
+  <hr data-aos="fade-right">
+</section>
+
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
+
+
+<section id="contacts">
+  <hr>
+   <h2>Questions? Let Me Know:</h2>
+      <ul>
+        <li>
+        <a href="mailto:geohanmatt@gmail.com">
+          <i class="fa-solid fa-envelope" style="color: white; background: lightblue; border-radius: 20px; font-size: 25px;"></i>
+        </a>
+        </li>
+        <li>
+        <a href="https://www.facebook.com/share/16WpFspmzd/" target="_blank">
+          <i class="fa-brands fa-facebook" style="color: blue; background: white; border-radius: 20px; font-size: 25px;"></i>
+        </a>
+        </li>
+        <li>
+        <a href="https://instagram.com/g30h4n_m4tt" target="_blank">
+          <i class="fa-brands fa-instagram" style="color: white; background: linear-gradient(60deg, yellow, red, purple); border-radius: 20px; font-size: 25px;"></i>
+        </a>
+        </li>
+      </ul>
+      <br>
+      <p style="font-size: 0.8rem; opacity: 0.7;">
+ &copy; 2025 Geohan | Comments powered by <a href="https://disqus.com" target="_blank" style="text-decoration: none; color: inherit;">Disqus</a> |
+</p>
+</section>
+
+<script>
+  var disqus_config = function () {
+    this.page.url = window.location.href;
+    this.page.identifier = document.title;
+  };
+
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://jiohan.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+
+<noscript>
+  Please enable JavaScript to view the 
+  <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+<script>
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+</script>
+<script>
+const params = new URLSearchParams(window.location.search);
+const userName = params.get("name") || "User";
+
+const coloredName = `<span style="color: #00ffff; font-style: italic;">${userName}</span>`;
+const message = `Hello, ${coloredName}! Welcome to my website!`;
+
+let index = 0;
+let typed = "";
+const speed = 70;
+
+window.addEventListener("DOMContentLoaded", () => {
+  const textEl = document.getElementById("text");
+  const cursor = document.querySelector(".cursor");
+
+  function typeWriter() {
+    if (index < message.length) {
+      typed += message[index];
+      textEl.innerHTML = typed;
+      index++;
+      setTimeout(typeWriter, speed);
+    } else {
+      cursor.style.display = "none";
+    }
+  }
+
+  setTimeout(typeWriter, 1000);
+});
+</script>
+<script>
+const ctx = document.getElementById('skillsBarChart').getContext('2d');
+
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['HTML', 'CSS', 'JavaScript'],
+    datasets: [{
+      label: 'Skill Level (%)',
+      data: [83, 68, 18],
+      backgroundColor: [
+        '#e34c26', // HTML
+        '#264de4', // CSS
+        '#f0db4f'  // JS
+      ],
+      borderRadius: 7,
+      borderSkipped: false
+    }]
+  },
+  options: {
+    responsive: true,
+    scales: {
+      y: {
+        beginAtZero: true,
+        max: 100,
+        ticks: {
+          stepSize: 20
+        },
+        grid: {
+          color: '#333'
+        },
+        title: {
+          display: true,
+          text: 'Mastery (%)'
+        }
+      },
+      x: {
+        grid: {
+          color: '#333'
+        },
+        title: {
+          display: true,
+          text: 'Front-End Languages'
+        }
+      }
+    },
+    plugins: {
+      legend: {
+        display: false
+      },
+      tooltip: {
+        callbacks: {
+          label: context => `${context.label}: ${context.raw}%`
+        }
+      }
+    }
+  }
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

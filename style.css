@@ -1,0 +1,111 @@
+html {
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+h1 {
+  color: lightblue;
+  text-shadow: 2px 2px 4px rgba(113,173,234, 0.5);
+  margin-bottom: 0;
+  font-size: clamp(4rem, 17vw, 17rem);
+}
+
+p {
+  margin-top: 0;
+  padding: 0;
+  color: #d1d6e2;
+  text-shadow: 1px 1px 2px rgba(2,2,4,1);
+  font-size: clamp(1rem, 4vw, 3rem);
+}
+
+input {
+  animation-name: slideH1, fadeIn;
+  animation-duration: 1.5s;
+  margin-bottom: 10px;
+  font-size: clamp(0.6rem, 3vw, 1.2rem);
+  padding: clamp(0.4rem, 1.5vw, 1.2rem);
+}
+
+input:focus {
+  outline-color: blue;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.H1 {
+  animation-name: slideH1, fadeIn;
+  animation-duration: 1s;
+}
+
+.subheader {
+  max-width: 80vw;
+  text-align: center;
+  animation-name: slideSubTxt, fadeIn;
+  animation-duration: 1.5s;
+}
+
+.highlight {
+  font-style: italic;
+  color: #74f0f0;
+}
+
+.bttn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: slideBttn, fadeInBttn;
+  animation-duration: 1.5s;
+  transition: transform 0.30s, opacity 0.30s;
+}
+
+.bttn button {
+  font-size: clamp(0.5rem, 2.5vw, 1.2rem);
+  padding: clamp(0.4rem, 1.5vw, 1.2rem);
+  background-color: #1c2ee6f0;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.bttn:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+@keyframes slideSubTxt {
+  from { transform: translateY(300%) }
+}
+
+@keyframes slideH1 {
+  from { transform: translateY(300%) }
+}
+
+@keyframes slideBttn {
+  from { transform: translateY(350%) }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  10% { opacity: 0; }
+}
+
+@keyframes fadeInBttn {
+  0% { opacity: 0; }
+  5% { opacity: 0; }
+  50% { opacity: 0; }
+  70% { opacity: 0.5; }
+}
